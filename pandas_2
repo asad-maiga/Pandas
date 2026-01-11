@@ -1,0 +1,19 @@
+import pandas as pd
+df = pd.read_csv('survey_results_public.csv')
+schema_df = pd.read_csv('survey_results_schema.csv')
+pd.set_option('display.max_columns', 85)
+pd.set_option('display.max_rows', 85)
+df.head()
+schema_df
+
+df.columns
+df.iloc[0]
+df.iloc[[0, 1]]
+df.iloc[[0, 1], [0, 1]]
+df.loc[[0, 1], ['Respondent', 'MainBranch']]
+df.shape
+df['Hobbyist']
+df['Hobbyist'].value_counts()
+df.loc[[0, 1, 2], 'Hobbyist']
+df.loc[0:2, 'Hobbyist']
+df.loc[0:2, "Hobbyist":"Employment"]
