@@ -1,0 +1,13 @@
+import pandas as pd
+
+df = pd.read_csv('survey_results_public.csv')
+df
+df.shape
+#df.info()
+pd.set_option('display.max_columns', 85)
+pd.set_option('display.max_rows', 85)
+schema_df = pd.read_csv('survey_results_schema.csv')
+schema_df
+df.head(10)
+df.tail()
+df.tail(10)
